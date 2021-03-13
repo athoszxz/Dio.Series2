@@ -17,7 +17,6 @@ namespace DIO.Series
         {   //Ao excluir um indice os outros indices mudam de posição em efeito dominó
             //Ao invés de remover o registro definitivamente com RemoveAt, aqui estou marcando o registro como excluído
             listaSerie[id].Excluir(); 
-            
         }
 
         public void Insere(Serie objeto)
@@ -47,10 +46,9 @@ namespace DIO.Series
             return listaSerie[x];
         }
         public void Favorita(int id)
-        {   //Ao excluir um indice os outros indices mudam de posição em efeito dominó
-            //Ao invés de remover o registro definitivamente com RemoveAt, aqui estou marcando o registro como excluído
+        {   
+            //Marca/Desmarca o registro como Favorito
             listaSerie[id].Favoritar(); 
-            
         }
 
     }
